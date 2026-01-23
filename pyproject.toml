@@ -1,0 +1,12 @@
+[project]
+name = "mal-manga"
+version = "0.1.0"
+python-version = ">=3.9"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "httpx>=0.28.1",
+    "ipykernel>=7.1.0",
+    "lxml>=6.0.2",
+    "numpy>=2.4.1",
+    "pandas>=3.0.0",
+]
