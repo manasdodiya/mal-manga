@@ -4,8 +4,8 @@ from pathlib import Path
 import csv
 import time
 
-# completed: 40000 | next: 45000, 50000
-START, STOP, STEP = 40000, 45000, 50
+# completed: 47000 | next: 50000, 55000
+START, STOP, STEP = 47000, 50000, 50
 HEADERS, TIMEOUT = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}, 40
 URL, FILEPATH = 'https://myanimelist.net/topmanga.php', Path('./data/manga_raw.csv')
 SCRAPING_ERROR = []
