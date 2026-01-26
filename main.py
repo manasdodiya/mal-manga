@@ -4,10 +4,10 @@ from pathlib import Path
 import csv
 import time
 
-# completed: 30000 | next: 30000, 40000
-START, STOP, STEP = 29000, 30000, 50
+# completed: 40000 | next: 45000, 50000
+START, STOP, STEP = 40000, 45000, 50
 HEADERS, TIMEOUT = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}, 40
-URL, FILEPATH = 'https://myanimelist.net/topmanga.php', Path('./data/manga_scraped.csv')
+URL, FILEPATH = 'https://myanimelist.net/topmanga.php', Path('./data/manga_raw.csv')
 SCRAPING_ERROR = []
 CSV_HEADER = [
     'manga_name',
@@ -129,8 +129,8 @@ def scrape_page(page_url, page_num, client):
 
 
 def insert_data(filepath, mode, data):
-    with open(filepath, mode, newline='', encoding='utf-8') as manga_scraped:
-        csv_writer = csv.DictWriter(manga_scraped, CSV_HEADER)
+    with open(filepath, mode, newline='', encoding='utf-8') as manga_raw:
+        csv_writer = csv.DictWriter(manga_raw, CSV_HEADER)
         if mode == 'w':
             csv_writer.writeheader()
         csv_writer.writerows(data)
