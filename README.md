@@ -7,7 +7,7 @@ This dataset contains comprehensive metadata and statistics for over 81,000 mang
 - **Format**: CSV (Comma-Separated Values)
 - **File Size**: Variable (depends on included entries)
 - **Total Entries**: ~81,000 manga titles
-- **Last Updated**: February 2026
+- **Last Updated**: January 2026
 - **Source**: MyAnimeList.net
 
 ## Column Descriptions
